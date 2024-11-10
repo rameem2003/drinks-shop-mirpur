@@ -37,7 +37,7 @@ const Navigation = () => {
             </span>
           </Link>
 
-          <List className="items-center justify-center gap-10 lg:gap-[60px] flex fixed bottom-2 left-[50%] translate-x-[-50%] bg-black/90 w-[80%] py-4 px-3 rounded-2xl md:static md:p-0 md:bg-transparent md:w-auto md:translate-x-0">
+          <List className="items-center justify-center gap-10 lg:gap-[60px] flex fixed bottom-4 left-[50%] translate-x-[-50%] bg-black/90 w-[80%] py-4 px-3 rounded-2xl md:static md:p-0 md:bg-transparent md:w-auto md:translate-x-0">
             <ListItem>
               <Link className=" font-medium text-[14px] text-white" to="/">
                 Home
@@ -49,7 +49,10 @@ const Navigation = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link className=" font-medium text-[14px] text-white" to="/shop">
+              <Link
+                className=" font-medium text-[14px] text-white"
+                to="/contact"
+              >
                 Contact
               </Link>
             </ListItem>

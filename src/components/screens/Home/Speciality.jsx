@@ -19,7 +19,7 @@ const Speciality = () => {
         </p>
 
         <Flex className=" flex-col sm:flex-row sm:flex-wrap xl:flex-nowrap mt-8 items-center justify-center gap-5">
-          <div className=" w-[75%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
+          <div className=" w-[90%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
             <Image src={icon1} alt="icon" />
 
             <h2 className=" font-bold text-[28px] text-title text-center mt-6">
@@ -30,7 +30,7 @@ const Speciality = () => {
               Beans that provides great taste
             </p>
           </div>
-          <div className=" w-[75%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
+          <div className=" w-[90%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
             <Image src={icon2} alt="icon" />
 
             <h2 className=" font-bold text-[28px] text-title text-center mt-6">
@@ -42,7 +42,7 @@ const Speciality = () => {
             </p>
           </div>
 
-          <div className=" w-[75%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
+          <div className=" w-[90%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
             <Image src={icon3} alt="icon" />
 
             <h2 className=" font-bold text-[28px] text-title text-center mt-6">
@@ -53,7 +53,7 @@ const Speciality = () => {
               We provide the extra ordinary services
             </p>
           </div>
-          <div className=" w-[75%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
+          <div className=" w-[90%] sm:w-[48%] lg:w-[30%] xl:w-[25%] py-9 px-10 bg-[#FFF9F1] border-[1px] border-[#F9C06A]/40 flex items-center flex-col">
             <Image src={icon4} alt="icon" />
 
             <h2 className=" font-bold text-[28px] text-title text-center mt-6">

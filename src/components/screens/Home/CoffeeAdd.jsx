@@ -9,8 +9,8 @@ const CoffeeAdd = () => {
     <section className=" my-[82px] bg-bgScreenOne py-[54px]">
       <Container>
         <Flex className="items-center flex-col gap-10 md:flex-row">
-          <div className="w-full xl:w-6/12">
-            <h2 className=" font-bold text-3xl md:text-4xl xl:text-[54px] text-white leading-5">
+          <div className="w-full xl:w-6/12 text-center md:text-left">
+            <h2 className=" font-bold text-3xl md:text-4xl xl:text-[54px] text-white leading-10">
               Get a chance to have an Amazing morning
             </h2>
 

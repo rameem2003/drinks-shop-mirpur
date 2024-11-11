@@ -8,6 +8,9 @@ import Rootlayout from "./Layouts/Rootlayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Cart from "./components/screens/Home/Cart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +18,9 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/cart" element={<Cart />} />
     </Route>
   )
 );

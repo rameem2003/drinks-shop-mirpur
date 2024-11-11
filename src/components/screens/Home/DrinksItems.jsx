@@ -2,8 +2,10 @@ import React from "react";
 import Container from "../../common/Container";
 import Flex from "../../common/Flex";
 import ItemCard from "../../common/ItemCard";
+import { useSelector } from "react-redux";
 
 const DrinksItems = () => {
+  const products = useSelector((state) => state.allProducts.products); // get all products from the redux
   return (
     <section className=" my-[82px]">
       <Container>
@@ -16,10 +18,13 @@ const DrinksItems = () => {
         </p>
 
         <Flex className=" mt-8 gap-5 flex-col sm:flex-wrap sm:flex-row xl:flex-nowrap">
-          <ItemCard className="w-full sm:w-[45%] lg:w-[32%] xl:w-[25%] mx-auto mb-10" />
-          <ItemCard className="w-full sm:w-[45%] lg:w-[32%] xl:w-[25%] mx-auto mb-10" />
-          <ItemCard className="w-full sm:w-[45%] lg:w-[32%] xl:w-[25%] mx-auto mb-10" />
-          <ItemCard className="w-full sm:w-[45%] lg:w-[32%] xl:w-[25%] mx-auto mb-10" />
+          {products.slice(0, 4).map((data, i) => (
+            <ItemCard
+              key={i}
+              data={data}
+              className="w-full sm:w-[45%] lg:w-[32%] xl:w-[25%] mx-auto mb-10"
+            />
+          ))}
         </Flex>
 
         <div className=" text-center mt-10">

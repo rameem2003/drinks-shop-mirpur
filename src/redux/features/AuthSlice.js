@@ -6,20 +6,22 @@ export const AuthSlice = createSlice({
     user: localStorage.getItem("drinkscredential")
       ? JSON.parse(localStorage.getItem("drinkscredential"))
       : {
-          msg: "User Found",
-          phone: "01409029641",
-          status: true,
-          user: "Mahmood Hassan Rameem",
+          // msg: "User Found",
+          // phone: "01409029641",
+          // status: true,
+          // user: "Mahmood Hassan Rameem",
+
+          status: false,
         },
   },
   reducers: {
     signInUser: (state, action) => {
       state.user = action.payload;
-      localStorage.setItem("smcorpcredential", JSON.stringify(action.payload));
+      localStorage.setItem("drinkscredential", JSON.stringify(action.payload));
     },
     logoutUser: (state, action) => {
       state.user = action.payload;
-      localStorage.setItem("smcorpcredential", JSON.stringify(action.payload));
+      localStorage.setItem("drinkscredential", JSON.stringify(action.payload));
     },
   },
 });

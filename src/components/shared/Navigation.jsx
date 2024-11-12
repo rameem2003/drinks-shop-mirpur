@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { allProducts } from "../../redux/features/LoadAllProductsSlice";
@@ -88,7 +88,8 @@ const Navigation = () => {
   }, []);
   return (
     <nav
-      className={`${scrolled ? " bg-black/90" : ""} fixed w-full py-5 z-[9999]`}
+      className={`${scrolled ? " bg-black/90" : ""} 
+       fixed w-full py-5 z-[9999]`}
     >
       <Container>
         <Flex className="items-center justify-between">
